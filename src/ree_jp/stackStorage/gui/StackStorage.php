@@ -49,7 +49,7 @@ class StackStorage
                     function (int $tick) use ($gui): void {
                         GuiAPI::$instance->sendGui($this->p->getName(), $gui);
                     }
-                ), 3);
+                ), 20);
         } catch (Exception $ex) {
             $this->p->sendMessage(TextFormat::RED . '>> ' . TextFormat::RESET . 'StackStorage error');
             $this->p->sendMessage(TextFormat::RED . '>> ' . TextFormat::RESET . 'Details : ' . $ex->getMessage());
